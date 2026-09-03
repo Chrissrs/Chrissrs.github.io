@@ -1,0 +1,132 @@
+css/* Configurações Gerais */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header, section, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+}
+
+h1 {
+    margin: 15px 0 5px 0;
+    font-size: 2.2rem;
+    color: #ffffff;
+}
+
+header p {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Seções e Títulos */
+h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #333;
+    padding-bottom: 8px;
+    margin-top: 40px;
+}
+
+/* Cartões de Experiência e Projetos */
+.card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #2d2d2d;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #3b82f6;
+}
+
+/* Certificações e Alinhamentos */
+.cert-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cert-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.cert-link {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.cert-link:hover {
+    background-color: #1d4ed8;
+}
+
+/* Lista de Habilidades e Hobbies */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.pet-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.pet-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-size: 0.9rem;
+}
