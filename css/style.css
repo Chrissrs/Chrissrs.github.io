@@ -1,13 +1,14 @@
 :root {
-    --bg: #0f2438;
-    --panel: #14304a;
-    --line: #2a4e6e;
-    --line-faint: rgba(143, 200, 232, 0.08);
-    --accent: #8fc8e8;
-    --accent-strong: #cdeaff;
-    --pencil: #e2673d;
-    --text: #eaf3fa;
-    --text-muted: #93aec4;
+    --bg: #26282b;
+    --panel: #323538;
+    --header-bg: #0c0d0e;
+    --line: #484c50;
+    --line-faint: rgba(200, 205, 210, 0.06);
+    --accent: #b7bdc2;
+    --accent-strong: #f0f1f2;
+    --pencil: #e2793d;
+    --text: #e9eaea;
+    --text-muted: #9a9fa3;
 
     --font-display: "Space Grotesk", sans-serif;
     --font-body: "IBM Plex Sans", sans-serif;
@@ -70,7 +71,7 @@ a:focus-visible {
     gap: 24px;
     align-items: flex-start;
     border: 1px solid var(--line);
-    background: var(--panel);
+    background: var(--header-bg);
     padding: 28px;
     margin-bottom: 40px;
 }
