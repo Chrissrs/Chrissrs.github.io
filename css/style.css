@@ -9,13 +9,13 @@ body {
 
 /* Cabeçalho */
 header {
+    background: linear-gradient(135deg, #000000, #1a1a1a); /* Preto com leve gradiente */
+    color: white;
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(135deg, #0073e6, #004080);
-    color: white;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
 .profile-img {
