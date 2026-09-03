@@ -21,9 +21,14 @@ header {
     border: 3px solid white;
 }
 
-h1, h2 {
-    margin: 0.5rem 0;
+h1, h2, h3 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin-bottom: 0.5rem;
 }
+p, li {
+    line-height: 1.6;
+}
+
 
 .card {
     background: white;
@@ -45,6 +50,11 @@ h1, h2 {
     text-decoration: none;
     font-weight: bold;
 }
+.social-links a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
 
 .social-links a:hover {
     text-decoration: underline;
