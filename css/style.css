@@ -2,22 +2,21 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #f0f2f5; /* cinza claro */
-    color: #2c3e50; /* azul profundo para texto */
+    background-color: #f0f2f5; /* fundo cinza claro */
+    color: #2c3e50; /* texto azul profundo */
     line-height: 1.6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* --- Cabeçalho --- */
 header {
-    background: linear-gradient(135deg, #1e3c72, #2a5298); /* azul profundo com gradiente */
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* azul profundo */
     color: #ffffff;
     text-align: center;
     padding: 3rem 1rem;
-    animation: fadeInDown 1s ease-out;
 }
+
 
 .profile-img {
     width: 150px;
