@@ -1,131 +1,325 @@
+:root {
+    --bg: #0f2438;
+    --panel: #14304a;
+    --line: #2a4e6e;
+    --line-faint: rgba(143, 200, 232, 0.08);
+    --accent: #8fc8e8;
+    --accent-strong: #cdeaff;
+    --pencil: #e2673d;
+    --text: #eaf3fa;
+    --text-muted: #93aec4;
+
+    --font-display: "Space Grotesk", sans-serif;
+    --font-body: "IBM Plex Sans", sans-serif;
+    --font-mono: "IBM Plex Mono", monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #121212;
-    color: #e0e0e0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
     margin: 0;
-    padding: 0;
+    background-color: var(--bg);
+    background-image:
+        repeating-linear-gradient(0deg, var(--line-faint) 0, var(--line-faint) 1px, transparent 1px, transparent 32px),
+        repeating-linear-gradient(90deg, var(--line-faint) 0, var(--line-faint) 1px, transparent 1px, transparent 32px);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    padding: 40px 20px 80px;
 }
 
-header, section, footer {
-    max-width: 800px;
+.sheet {
+    max-width: 760px;
     margin: 0 auto;
-    padding: 20px;
 }
 
-/* Cabeçalho */
-header {
-    text-align: center;
-    padding-top: 50px;
+h1, h2, h3 {
+    font-family: var(--font-display);
+    margin: 0;
+    letter-spacing: 0.01em;
+}
+
+p {
+    margin: 0 0 12px;
+    color: var(--text);
+}
+
+a {
+    color: var(--accent-strong);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--pencil);
+    border-bottom-color: var(--pencil);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+/* ---------- TITLE BLOCK (SELO) ---------- */
+
+.title-block {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    padding: 28px;
+    margin-bottom: 40px;
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-    border: 3px solid #333;
+    border: 1px solid var(--line);
+    flex-shrink: 0;
 }
 
-h1 {
-    margin: 15px 0 5px 0;
-    font-size: 2.2rem;
-    color: #ffffff;
+.title-block-info {
+    flex: 1;
+    min-width: 0;
 }
 
-header p {
-    color: #aaa;
+.title-block h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent-strong);
+}
+
+.role {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--accent);
+    margin: 4px 0 16px;
+}
+
+.title-block-cells {
+    display: flex;
+    gap: 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 16px;
+}
+
+.cell {
+    flex: 1;
+    padding: 8px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.cell + .cell {
+    border-left: 1px solid var(--line);
+}
+
+.cell-label {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.cell-value {
+    font-size: 0.85rem;
+    color: var(--text);
+    word-break: break-word;
+}
+
+.social-links {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+}
+
+.social-links .divider {
+    color: var(--text-muted);
+    margin: 0 8px;
+    border: none;
+}
+
+/* ---------- FOLHAS (SECTIONS) ---------- */
+
+.folha {
+    margin-bottom: 44px;
+}
+
+.folha h2 {
+    font-size: 1.15rem;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
     margin-bottom: 20px;
+    color: var(--text);
 }
 
-.social-links a {
-    color: #3b82f6;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 10px;
+.folha-num {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--pencil);
+    border: 1px solid var(--pencil);
+    padding: 1px 6px;
 }
 
-.social-links a:hover {
-    text-decoration: underline;
-}
+/* ---------- CARDS (STACKED SHEETS) ---------- */
 
-/* Seções e Títulos */
-h2 {
-    color: #ffffff;
-    border-bottom: 2px solid #333;
-    padding-bottom: 8px;
-    margin-top: 40px;
-}
-
-/* Cartões de Experiência e Projetos */
 .card {
-    background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #2d2d2d;
+    position: relative;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 20px 22px;
+    margin-bottom: 16px;
 }
 
-.card h3 {
-    margin-top: 0;
-    color: #3b82f6;
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--accent);
+    opacity: 0.6;
 }
 
-/* Certificações e Alinhamentos */
-.cert-card {
+.card::before {
+    top: -1px;
+    left: -1px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.card::after {
+    bottom: -1px;
+    right: -1px;
+    border-left: none;
+    border-top: none;
+}
+
+.card-head {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 4px;
 }
 
-.cert-img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
+.card-head h3 {
+    font-size: 1.02rem;
+    color: var(--accent-strong);
 }
 
-.cert-link {
-    display: inline-block;
-    background-color: #2563eb;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 4px;
-    text-decoration: none;
+.period {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--pencil);
+    white-space: nowrap;
+}
+
+.subtitle {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.cert-empty {
+    border-style: dashed;
+    color: var(--text-muted);
+}
+
+.cert-empty p {
+    color: var(--text-muted);
+}
+
+/* ---------- BOM TABLE (HABILIDADES) ---------- */
+
+.bom-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--panel);
+    border: 1px solid var(--line);
+}
+
+.bom-table th,
+.bom-table td {
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--line);
     font-size: 0.9rem;
-    margin-top: 10px;
 }
 
-.cert-link:hover {
-    background-color: #1d4ed8;
+.bom-table th {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--accent);
 }
 
-/* Lista de Habilidades e Hobbies */
-ul {
-    padding-left: 20px;
+.bom-table td:first-child {
+    font-family: var(--font-mono);
+    color: var(--pencil);
+    width: 48px;
 }
 
-li {
-    margin-bottom: 8px;
+.bom-table tr:last-child td {
+    border-bottom: none;
 }
 
-.pet-section {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-top: 20px;
-}
+/* ---------- STAMP / FOOTER ---------- */
 
-.pet-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Rodapé */
-footer {
+.stamp {
+    border: 1px solid var(--line);
+    padding: 16px 22px;
     text-align: center;
-    padding: 40px 20px;
-    color: #666;
-    font-size: 0.9rem;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.stamp p {
+    margin: 0;
+    color: var(--text-muted);
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 560px) {
+    .title-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title-block-cells {
+        flex-direction: column;
+    }
+
+    .cell + .cell {
+        border-left: none;
+        border-top: 1px solid var(--line);
+    }
+
+    .card-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* ---------- REDUCED MOTION ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
 }
