@@ -1,42 +1,41 @@
-/* --- Estilo geral --- */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #1c1f24; /* cinza grafite suave */
-    color: #e8e8e8; /* texto claro */
+    background-color: #e6e9ef; /* cinza azulado suave */
+    color: #1f2937; /* cinza escuro para texto */
     line-height: 1.6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* --- Cabeçalho --- */
+/* Cabeçalho */
 header {
-    background: linear-gradient(135deg, #1c1f24, #2a2f36); /* gradiente suave */
-    color: #f5f5f5;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #ffffff;
     text-align: center;
     padding: 3rem 1rem;
-    animation: fadeInDown 1s ease-out;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+/* Imagem de perfil */
 .profile-img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #4db6ac; /* azul esverdeado */
-    box-shadow: 0 0 15px rgba(77,182,172,0.4);
-    animation: pulse 2s infinite;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 15px rgba(30,60,114,0.4);
     transition: transform 0.3s ease;
 }
 
 .profile-img:hover {
-    transform: scale(1.1) rotate(3deg);
+    transform: scale(1.05);
 }
 
-/* --- Links sociais --- */
+/* Links sociais */
 .social-links a {
-    color: #4db6ac; /* azul esverdeado */
+    color: #ffd700; /* dourado suave */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -46,57 +45,33 @@ header {
     color: #ffffff;
 }
 
-/* --- Cards --- */
+/* Cards */
 .card {
-    background: #2a2f36; /* cinza mais claro */
+    background: #ffffff;
     padding: 1.5rem;
     margin-bottom: 1rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(77,182,172,0.3);
+    box-shadow: 0 6px 15px rgba(30,60,114,0.25);
 }
 
-/* --- Títulos --- */
+/* Títulos */
 h2 {
-    color: #f5f5f5;
-    border-bottom: 2px solid #4db6ac;
+    color: #1e3c72;
+    border-bottom: 2px solid #2a5298;
     padding-bottom: 0.5rem;
 }
 
-/* --- Rodapé --- */
+/* Rodapé */
 footer {
     text-align: center;
     padding: 2rem 0;
-    background-color: #2a2f36;
-    color: #f5f5f5;
+    background-color: #1e3c72;
+    color: #ffffff;
     margin-top: auto;
-}
-
-/* --- Animações --- */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(77,182,172,0.7);
-    }
-    70% {
-        box-shadow: 0 0 0 10px rgba(77,182,172,0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(77,182,172,0);
-    }
 }
