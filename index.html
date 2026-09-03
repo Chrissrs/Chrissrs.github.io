@@ -4,145 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Soares da Cunha - Portfólio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <!-- Altere o nome da imagem abaixo para a sua foto depois se quiser -->
+        <img src="foto-perfil.jpg" alt="Foto de Christian Soares da Cunha" class="profile-img">
+        <h1>Christian Soares da Cunha</h1>
+        <p>Projetista/Desenhista Freelance</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/christian-s-3187483bb/" target="_blank">LinkedIn</a> |
+            <a href="https://www.instagram.com/_chrissrs/" target="_blank">Instagram</a> |
+            <!-- Suba seu PDF no repositório e ajuste o caminho abaixo (ex: docs/curriculo.pdf) -->
+            <a href="#" target="_blank">Currículo PDF</a>
+        </div>
+    </header>
 
-    <div class="sheet">
+    <section id="resumo">
+        <h2>Resumo Profissional 🚀</h2>
+        <p>Sou projetista em Telecomunicações com 8 anos de experiência diversificada em projetos de infraestrutura móvel e redes ópticas, buscando oportunidades para aplicar habilidades técnicas e conhecimento adquiridos em ambientes desafiadores e dinâmicos.</p>
+    </section>
 
-        <!-- SELO / TITLE BLOCK -->
-        <header class="title-block">
-            <!-- Altere o nome da imagem abaixo para a sua foto depois se quiser -->
-            <img src="foto-perfil.jpg" alt="Foto de Christian Soares da Cunha" class="profile-img">
-            <div class="title-block-info">
-                <h1>Christian Soares da Cunha</h1>
-                <p class="role">Projetista / Desenhista Freelance</p>
-                <div class="title-block-cells">
-                    <div class="cell">
-                        <span class="cell-label">Contato</span>
-                        <span class="cell-value">chriss.soarescunha@gmail.com</span>
-                    </div>
-                    <div class="cell">
-                        <span class="cell-label">Área</span>
-                        <span class="cell-value">Telecomunicações</span>
-                    </div>
-                </div>
-                <nav class="social-links">
-                    <a href="https://www.linkedin.com/in/christian-s-3187483bb/" target="_blank">LinkedIn</a>
-                    <span class="divider">/</span>
-                    <a href="https://www.instagram.com/_chrissrs/" target="_blank">Instagram</a>
-                    <span class="divider">/</span>
-                    <!-- Suba seu PDF no repositório e ajuste o caminho abaixo (ex: docs/curriculo.pdf) -->
-                    <a href="#" target="_blank">Currículo PDF</a>
-                </nav>
-            </div>
-        </header>
+    <section id="experiencia">
+        <h2>Experiência Profissional 💼</h2>
 
-        <!-- RESUMO -->
-        <section id="resumo" class="folha">
-            <h2><span class="folha-num">01</span> Resumo Profissional</h2>
-            <p>Sou projetista em Telecomunicações com 8 anos de experiência diversificada em projetos de infraestrutura móvel e redes ópticas, buscando oportunidades para aplicar habilidades técnicas e conhecimento adquiridos em ambientes desafiadores e dinâmicos.</p>
-        </section>
+        <div class="card">
+            <h3>Projetista/Desenhista Freelance - Microempreendedor Individual/MEI</h3>
+            <p class="period">2023 - 2026</p>
+            <p><strong>Descrição:</strong> Execução de Projetos/Relatórios em geral CLARO.</p>
+            <p><strong>Competências principais:</strong> Excel, AutoCAD.</p>
+        </div>
 
-        <!-- EXPERIÊNCIA -->
-        <section id="experiencia" class="folha">
-            <h2><span class="folha-num">02</span> Experiência Profissional</h2>
+        <div class="card">
+            <h3>Projetista/Desenhista - Stalker Engenharia</h3>
+            <p class="period">2020 - 2020</p>
+            <p><strong>Descrição:</strong> Execução de Projetos/Relatórios Huawei (OI, TIM, CLARO), orientação ao técnico de campo referente às vistorias necessárias para execução dos projetos, suporte técnico na área de TI.</p>
+        </div>
 
-            <div class="card">
-                <div class="card-head">
-                    <h3>Projetista/Desenhista Freelance</h3>
-                    <span class="period">2023 — 2026</span>
-                </div>
-                <p class="subtitle">Microempreendedor Individual (MEI)</p>
-                <p><strong>Descrição:</strong> Execução de Projetos/Relatórios em geral CLARO.</p>
-                <p><strong>Competências principais:</strong> Excel, AutoCAD.</p>
-            </div>
+        <div class="card">
+            <h3>Projetista/Desenhista - AC/DC Engenharia</h3>
+            <p class="period">2018 - 2020</p>
+            <p><strong>Descrição:</strong> Execução de Projetos/Relatórios de implantação Nokia DWDM, Nokia RF, Relatórios de Projetos Vivo, Relatórios de Instalação e Desinstalação de Equipamentos Claro em geral.</p>
+        </div>
 
-            <div class="card">
-                <div class="card-head">
-                    <h3>Projetista/Desenhista</h3>
-                    <span class="period">2020 — 2020</span>
-                </div>
-                <p class="subtitle">Stalker Engenharia</p>
-                <p><strong>Descrição:</strong> Execução de Projetos/Relatórios Huawei (OI, TIM, CLARO), orientação ao técnico de campo referente às vistorias necessárias para execução dos projetos, suporte técnico na área de TI.</p>
-            </div>
+        <div class="card">
+            <h3>Assistente de Controle Técnico e Manutenção - TLSV Engenharia</h3>
+            <p class="period">2018 - 2020</p>
+            <p><strong>Descrição:</strong> Monitoramento das atividades de manutenção de rede óptica e metálica (setor 24 horas), baixas nas atividades realizadas em campo, cobrança das atividades executadas na plataforma (VIVO).</p>
+        </div>
+    </section>
 
-            <div class="card">
-                <div class="card-head">
-                    <h3>Projetista/Desenhista</h3>
-                    <span class="period">2018 — 2020</span>
-                </div>
-                <p class="subtitle">AC/DC Engenharia</p>
-                <p><strong>Descrição:</strong> Execução de Projetos/Relatórios de implantação Nokia DWDM, Nokia RF, Relatórios de Projetos Vivo, Relatórios de Instalação e Desinstalação de Equipamentos Claro em geral.</p>
-            </div>
+    <section id="certificacoes">
+        <h2>Certificações 🎓</h2>
+        <div class="card cert-empty">
+            <p>Nenhuma certificação cadastrada ainda — adicione aqui assim que concluir uma (ex: Cisco, CompTIA), com nome, instituição e link do badge.</p>
+        </div>
+    </section>
 
-            <div class="card">
-                <div class="card-head">
-                    <h3>Assistente de Controle Técnico e Manutenção</h3>
-                    <span class="period">2018 — 2020</span>
-                </div>
-                <p class="subtitle">TLSV Engenharia</p>
-                <p><strong>Descrição:</strong> Monitoramento das atividades de manutenção de rede óptica e metálica (setor 24 horas), baixas nas atividades realizadas em campo, cobrança das atividades executadas na plataforma (VIVO).</p>
-            </div>
-        </section>
+    <section id="habilidades">
+        <h2>Habilidades e Conhecimentos 🛠️</h2>
+        <ul>
+            <li><strong>Projetos e desenho técnico:</strong> AutoCAD</li>
+            <li><strong>Ferramentas / Sistemas:</strong> Excel</li>
+            <li><strong>Redes móveis:</strong> Projetos RF, infraestrutura Nokia, Huawei</li>
+            <li><strong>Redes ópticas:</strong> monitoramento e manutenção (DWDM)</li>
+            <li><strong>Relatórios técnicos:</strong> instalação, desinstalação e vistoria de equipamentos</li>
+            <li><strong>Idiomas:</strong> Português (Nativo), Inglês (Intermediário)</li>
+        </ul>
+    </section>
 
-        <!-- CERTIFICAÇÕES -->
-        <section id="certificacoes" class="folha">
-            <h2><span class="folha-num">03</span> Certificações</h2>
-            <div class="card cert-empty">
-                <p>Nenhuma certificação cadastrada ainda.</p>
-                <p class="subtitle">Assim que concluir uma certificação, adicione aqui um card com nome, instituição e link do badge — igual ao modelo dos cards de experiência acima.</p>
-            </div>
-        </section>
-
-        <!-- HABILIDADES / LISTA DE MATERIAIS -->
-        <section id="habilidades" class="folha">
-            <h2><span class="folha-num">04</span> Habilidades e Conhecimentos</h2>
-            <table class="bom-table">
-                <thead>
-                    <tr>
-                        <th>Item</th>
-                        <th>Descrição</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>01</td>
-                        <td>AutoCAD — elaboração de projetos e desenhos técnicos</td>
-                    </tr>
-                    <tr>
-                        <td>02</td>
-                        <td>Excel — controle e organização de relatórios</td>
-                    </tr>
-                    <tr>
-                        <td>03</td>
-                        <td>Redes móveis — projetos RF e infraestrutura Nokia, Huawei</td>
-                    </tr>
-                    <tr>
-                        <td>04</td>
-                        <td>Redes ópticas — monitoramento e manutenção (DWDM)</td>
-                    </tr>
-                    <tr>
-                        <td>05</td>
-                        <td>Relatórios técnicos — instalação, desinstalação e vistoria de equipamentos</td>
-                    </tr>
-                    <tr>
-                        <td>06</td>
-                        <td>Idiomas — Português (nativo), Inglês (intermediário)</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- CARIMBO / RODAPÉ -->
-        <footer class="stamp">
-            <p>Contato: chriss.soarescunha@gmail.com</p>
-        </footer>
-
-    </div>
-
+    <footer>
+        <p>Contato: chriss.soarescunha@gmail.com</p>
+    </footer>
 </body>
 </html>
