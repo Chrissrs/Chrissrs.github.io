@@ -2,8 +2,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #121212; /* fundo grafite */
-    color: #e6e6e6; /* texto claro */
+    background-color: #2a2a2a; /* cinza escuro suave */
+    color: #e0e0e0; /* texto claro */
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -12,31 +12,31 @@ body {
 
 /* --- Cabeçalho --- */
 header {
-    background-color: #000000;
-    color: #f5f5f5;
+    background-color: #000000; /* preto sólido */
+    color: #ffffff;
     text-align: center;
     padding: 3rem 1rem;
-    animation: fadeInDown 1s ease-out;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
+/* --- Imagem de perfil --- */
 .profile-img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #d4af37; /* dourado suave */
-    box-shadow: 0 0 15px rgba(212,175,55,0.3);
-    animation: pulse 2s infinite;
+    border: 3px solid #4da6ff; /* azul suave */
+    box-shadow: 0 0 15px rgba(77,166,255,0.3);
     transition: transform 0.3s ease;
 }
 
 .profile-img:hover {
-    transform: scale(1.1) rotate(3deg);
+    transform: scale(1.05);
 }
 
 /* --- Links sociais --- */
 .social-links a {
-    color: #d4af37;
+    color: #4da6ff; /* azul suave */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -46,33 +46,25 @@ header {
     color: #ffffff;
 }
 
-/* --- Seções --- */
-section {
-    max-width: 800px;
-    width: 90%;
-    margin: 2rem auto;
-    box-sizing: border-box;
-}
-
 /* --- Cards --- */
 .card {
-    background: #1e1e1e;
+    background: #1f1f1f; /* cinza mais escuro */
     padding: 1.5rem;
     margin-bottom: 1rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(212,175,55,0.2);
+    box-shadow: 0 6px 15px rgba(77,166,255,0.3);
 }
 
 /* --- Títulos --- */
 h2 {
-    color: #f5f5f5;
-    border-bottom: 2px solid #d4af37;
+    color: #ffffff;
+    border-bottom: 2px solid #4da6ff;
     padding-bottom: 0.5rem;
 }
 
@@ -81,30 +73,6 @@ footer {
     text-align: center;
     padding: 2rem 0;
     background-color: #000000;
-    color: #f5f5f5;
+    color: #ffffff;
     margin-top: auto;
-}
-
-/* --- Animações --- */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(212,175,55,0.7);
-    }
-    70% {
-        box-shadow: 0 0 0 10px rgba(212,175,55,0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(212,175,55,0);
-    }
 }
