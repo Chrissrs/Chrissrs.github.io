@@ -2,8 +2,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #2a2a2a; /* cinza escuro suave */
-    color: #e0e0e0; /* texto claro */
+    background-color: #e0e0e0; /* cinza claro */
+    color: #1a1a1a; /* texto escuro */
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@ header {
     color: #ffffff;
     text-align: center;
     padding: 3rem 1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 /* --- Imagem de perfil --- */
@@ -25,8 +25,8 @@ header {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #4da6ff; /* azul suave */
-    box-shadow: 0 0 15px rgba(77,166,255,0.3);
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
     transition: transform 0.3s ease;
 }
 
@@ -36,7 +36,7 @@ header {
 
 /* --- Links sociais --- */
 .social-links a {
-    color: #4da6ff; /* azul suave */
+    color: #ffd700; /* dourado para contraste */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -48,23 +48,23 @@ header {
 
 /* --- Cards --- */
 .card {
-    background: #1f1f1f; /* cinza mais escuro */
+    background: #ffffff;
     padding: 1.5rem;
     margin-bottom: 1rem;
     border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(77,166,255,0.3);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 }
 
 /* --- Títulos --- */
 h2 {
-    color: #ffffff;
-    border-bottom: 2px solid #4da6ff;
+    color: #000000;
+    border-bottom: 2px solid #ffd700;
     padding-bottom: 0.5rem;
 }
 
